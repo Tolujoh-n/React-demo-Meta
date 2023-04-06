@@ -8,6 +8,13 @@ import Sidebar from './components/Sidebar';
 import logo from './logo.svg';
 import pics from './pics.png';
 import profile from './profile.png';
+import Btn from "./components/Btn";
+import Calculator from './components/calculator';
+
+// for Calculator
+
+import "./Calculator.css";
+
 
 
 // function johnImage(props) {
@@ -32,8 +39,11 @@ function App() {
       <div>
         <Main />
         <img src={logo} className="App-logo" alt="logo" />
-        <pics />
         <img src={pics} className="" alt="pics" style={{ width: "500px" }} />
+        <br />
+        <Btn />
+
+        <Calculator />
       </div>
 
       <div>
