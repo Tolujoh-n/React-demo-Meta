@@ -11,11 +11,12 @@ import profile from './profile.png';
 import Btn from "./components/Btn";
 import Calculator from './components/calculator';
 
+
 // for Calculator
 
 import "./Calculator.css";
-
-
+import ModeToggler from './components/ModeToggler';
+import Promo from './components/Promo';
 
 // function johnImage(props) {
 //   const userPic = <img src={profile} alt="planet-pic" />;
@@ -24,16 +25,32 @@ import "./Calculator.css";
 
 function App() {
   return (
-    <div className="App-code">
-      <h1>Welcome to React</h1>
 
+    <div className="App-code">
       <div>
-      <img src={profile} alt="planet-pic" />
+        <h1>Welcome to React</h1>
+        <ModeToggler />
       </div>
 
-      <Header name="john" color="orange" age={12} />
+      <div>
+        <Promo />
+      </div>
+
+
+      <div>
+        <img src={profile} alt="planet-pic" />
+      </div>
+
+      <div>
+        <Header name="john" color="orange" age={12} />
+      </div>
+
       <hr />
-      <Nav />
+
+      <div>
+        <Nav />
+      </div>
+
       <hr />
 
       <div>
@@ -42,7 +59,6 @@ function App() {
         <img src={pics} className="" alt="pics" style={{ width: "500px" }} />
         <br />
         <Btn />
-
         <Calculator />
       </div>
 
